@@ -1,0 +1,11 @@
+﻿@model Lab3_test3.Models.NameLoopFormModel
+
+@{
+    ViewData["Title"] = "Pętla-Imienia";
+}
+
+@for (int i = 0; i < Model.LoopAmount; i++)
+{
+    <p>@Html.DisplayFor(model => model.Name)</p>
+}
+
